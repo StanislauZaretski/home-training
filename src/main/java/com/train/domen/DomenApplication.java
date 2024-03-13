@@ -27,13 +27,13 @@ public class DomenApplication {
 
             System.out.println("==== 1 == Let's inspect the beans provided by Spring Boot:====");
 
-            String[] beanNames = context.getBeanDefinitionNames();
-            Arrays.sort(beanNames);
-            int index = 0;
-            for (String beanName : beanNames) {
-                System.out.println(index + " - " + beanName);
-                index++;
-            }
+//            String[] beanNames = context.getBeanDefinitionNames();
+//            Arrays.sort(beanNames);
+//            int index = 0;
+//            for (String beanName : beanNames) {
+//                System.out.println(index + " - " + beanName);
+//                index++;
+//            }
 
         };
     }
