@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: domen-prod
+server:
+  port: 8090

@@ -11,22 +11,20 @@ import org.springframework.context.annotation.Bean;
 
 import java.util.Arrays;
 
-@SpringBootApplication
+@SpringBootApplication()
 public class DomenApplication {
     public static void main(String[] args) {
         SpringApplication.run(DomenApplication.class, args);
 //		ApplicationContext context = new ClassPathXmlApplicationContext("helloconfig.xml"); //XML config
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class); //Annotations config
-        HelloBean helloBean = (HelloBean) context.getBean("helloWorld");
+        HelloBean helloBean = (HelloBean) context.getBean("CurrentConfigBean");
         helloBean.printMessage();
     }
 
-    @Bean
+    @Bean(name = "CLI - 1")
     public CommandLineRunner commandLineRunner(ApplicationContext context) {
         return args -> {
-
             System.out.println("==== 1 == Let's inspect the beans provided by Spring Boot:====");
-
 //            String[] beanNames = context.getBeanDefinitionNames();
 //            Arrays.sort(beanNames);
 //            int index = 0;
@@ -34,11 +32,10 @@ public class DomenApplication {
 //                System.out.println(index + " - " + beanName);
 //                index++;
 //            }
-
         };
     }
 
-    @Bean
+    @Bean(name = "CLI - 2")
     public CommandLineRunner commandLineRunnerSecond(ApplicationContext context) {
         return args -> {
             System.out.println("==== 2 ==Let's inspect the beans provided by Spring Boot:=====");
