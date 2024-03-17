@@ -1,0 +1,10 @@
+INSERT INTO customers (NAME) VALUES ('Michael Johnson');
+INSERT INTO customers (NAME) VALUES ('Sarah Davis');
+INSERT INTO customers (NAME) VALUES ('Jessica Smith');
+INSERT INTO customers (NAME) VALUES ('Jacob Martinez');
+INSERT INTO customers (NAME) VALUES ('Mohamed Ali');
+INSERT INTO customers (NAME) VALUES ('Lucy Thompson');
+INSERT INTO customers (NAME) VALUES ('Megan Taylor');
+INSERT INTO customers (NAME) VALUES ('Ryan Anderson');
+INSERT INTO customers (NAME) VALUES ('Emma Wilson');
+INSERT INTO customers (NAME) VALUES ('Oliver Brown');
