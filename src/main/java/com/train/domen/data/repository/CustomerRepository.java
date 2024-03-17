@@ -1,6 +1,6 @@
-package com.train.domen.repository;
+package com.train.domen.data.repository;
 
-import com.train.domen.repository.model.Customer;
+import com.train.domen.data.model.Customer;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

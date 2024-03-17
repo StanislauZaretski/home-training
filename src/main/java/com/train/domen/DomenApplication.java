@@ -2,7 +2,7 @@ package com.train.domen;
 
 import com.train.domen.Configuration.AppConfig;
 import com.train.domen.Configuration.HelloBean;
-import com.train.domen.repository.model.Customer;
+import com.train.domen.data.model.Customer;
 import com.train.domen.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -56,6 +56,7 @@ public class DomenApplication {
             for (Customer customer : customers) {
                 System.out.println(customer);
             }
+            customerService.getOrders().forEach(System.out::println);
         };
     }
 

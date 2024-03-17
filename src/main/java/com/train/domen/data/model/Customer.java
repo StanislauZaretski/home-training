@@ -1,4 +1,4 @@
-package com.train.domen.repository.model;
+package com.train.domen.data.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;

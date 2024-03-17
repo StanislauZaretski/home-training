@@ -1,4 +1,4 @@
-package com.train.domen.Endpoints;
+package com.train.domen.endpoint;
 
 import com.train.domen.service.CustomerService;
 import lombok.AllArgsConstructor;
@@ -15,7 +15,7 @@ public class TestController {
     public String index() {
         StringBuilder sb = new StringBuilder();
         sb.append("<p>Greetings from Spring Boot!<br>");
-        customerService.getAllCustomers().iterator().forEachRemaining(customer -> sb.append(customer.toString()).append("<br>"));
+        customerService.getAllCustomers().forEach(customer -> sb.append(customer.toString()).append("<br>"));
         sb.append("</p>");
         return sb.toString();
     }
