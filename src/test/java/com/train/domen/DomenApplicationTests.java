@@ -21,7 +21,7 @@ class DomenApplicationTests {
 	@Test
 	void allBeansExist() {
 		String[] beanNames = ctx.getBeanDefinitionNames();
-		assertThat(beanNames).contains("helloWorld");
+		assertThat(beanNames).contains("CurrentConfigBean");
 	}
 
 }
